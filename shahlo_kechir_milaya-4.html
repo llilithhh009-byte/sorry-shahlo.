@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Шахло, кечир 💗</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;overflow:hidden;
+display:flex;align-items:center;justify-content:center;
+font-family:Arial,sans-serif;background:linear-gradient(135deg,#ffdce9,#dfe7ff)}
+.card{position:relative;text-align:center;background:#ffffffdd;backdrop-filter:blur(8px);
+padding:38px 28px;border-radius:30px;box-shadow:0 15px 45px #7d638333;
+width:min(90%,430px);animation:appear .9s ease}
+h1{color:#704f68;font-size:34px;margin:12px 0}.cat{font-size:100px;
+animation:sad 2s ease-in-out infinite}.text{font-size:21px;color:#555;line-height:1.5}
+button{border:0;border-radius:999px;padding:14px 28px;margin-top:22px;
+font-size:19px;background:#f28caf;color:white;cursor:pointer;box-shadow:0 7px 18px #f28caf55}
+button:active{transform:scale(.96)}.heart{position:absolute;top:-40px;font-size:24px;
+animation:fall linear infinite;opacity:.8}
+.h1{left:10%;animation-duration:5s}.h2{left:30%;animation-duration:7s;animation-delay:1s}
+.h3{left:55%;animation-duration:6s;animation-delay:2s}.h4{left:80%;animation-duration:8s;animation-delay:.5s}
+@keyframes sad{50%{transform:translateY(5px) rotate(-2deg)}}
+@keyframes appear{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="heart h1">💗</div><div class="heart h2">♡</div>
+<div class="heart h3">💔</div><div class="heart h4">💗</div>
+<div class="card">
+  <div class="cat">😿</div>
+  <h1>Шахло, кечир 🥺</h1>
+  <div class="text">Прости меня, пожалуйста…<br>Я правда не хотел(а) тебя расстроить 💔</div>
+  <button onclick="this.innerText='Спасибо… 🥹❤️'; this.style.background='#c58acb'">Простить ❤️</button>
+</div>
+</body>
+</html>
